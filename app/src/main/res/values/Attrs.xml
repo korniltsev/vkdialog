@@ -1,0 +1,9 @@
+<resources>
+<!--sample-->
+        <!--<declare-styleable name="ru.kurganec.vk.messenger.ui.helper.VKImageView">-->
+
+            <!--<attr name="roundRadius" format="float"/>-->
+        <!--</declare-styleable>-->
+
+
+</resources>

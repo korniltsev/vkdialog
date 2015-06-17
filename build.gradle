@@ -1,0 +1,10 @@
+
+buildscript {
+    repositories {
+        jcenter()        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.github.triplet.gradle:play-publisher:1.1.0'
+    }
+}

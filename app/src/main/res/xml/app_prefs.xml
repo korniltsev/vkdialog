@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/notifications"
+            android:key="notifications">
+
+        <CheckBoxPreference
+                android:key="@string/pref_do_notify"
+                android:title="@string/enable_notifications"
+                android:defaultValue="true"
+                />
+        <CheckBoxPreference
+                android:key="@string/pref_do_sound"
+                android:title="@string/enable_sound"
+                android:defaultValue="true"
+                android:dependency="do_notify"
+                />
+        <CheckBoxPreference
+                android:key="@string/pref_do_vibrate"
+                android:title="@string/enable_vibrations"
+                android:defaultValue="true"
+                android:dependency="do_notify"
+                />
+        <RingtonePreference
+                android:key="@string/pref_ringtone"
+                android:title="@string/ringtone"
+                android:summary="@string/select_notification_ringtone"
+                android:ringtoneType="notification"
+                android:showDefault="true"
+                android:dependency="do_notify"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="@string/Beta"
+            android:key="beta_group">
+        <CheckBoxPreference
+            android:title="@string/invisibility_mode"
+            android:key="@string/pref_invis"
+            android:summary="@string/may_need_time"/>
+        <CheckBoxPreference
+            android:title="@string/use_small_avatars"
+            android:key="@string/pref_small_avatars"
+            android:summary="@string/save_traffic"/>
+    </PreferenceCategory>
+    <CheckBoxPreference
+        android:title="@string/resize_pref_title"
+        android:key="@string/do_resize_image_upload"
+            android:summary="@string/upload_image_pref_description"
+            />
+</PreferenceScreen>

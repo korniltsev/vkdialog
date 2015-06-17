@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#fff"
+
+        >
+    <!--<include layout="@layout/dialog_caption"/>-->
+    <!--<TextView-->
+            <!--android:id="@+id/caption"-->
+            <!--style="@style/Dialog.CaptionText"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:gravity="center"-->
+            <!--tools:text="Rate me!"-->
+            <!--/>-->
+
+    <!--<ImageView-->
+            <!--android:id="@+id/caption_separator"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:src="@color/dgvg_main"/>-->
+    <RatingBar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+    <!--android:progressDrawable="@drawable/star_rating_bar_full"-->
+
+</LinearLayout>

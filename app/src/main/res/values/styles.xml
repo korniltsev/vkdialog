@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MessageDivider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_below">@id/list_attach</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="EmojiRadio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_radio</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop" >6dp</item>
+    </style>
+
+    <style name="RatingDialog"></style>
+</resources>

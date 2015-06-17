@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/menu_search"
+            android:title="Search user"
+            android:icon="@drawable/ic_2_action_search"
+            android:showAsAction="ifRoom|collapseActionView"
+            android:actionViewClass="com.actionbarsherlock.widget.SearchView"/>
+</menu>

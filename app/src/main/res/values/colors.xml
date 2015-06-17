@@ -1,0 +1,6 @@
+<resources>
+    <color name="bg_gray">#ffffff</color>
+    <color name="unread_message">#ffc3eeff</color>
+    <color name="divider">#aa9f9f9f</color>
+    <color name="blue_light">#33B5E5</color>
+</resources>

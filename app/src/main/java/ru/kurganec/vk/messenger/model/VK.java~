@@ -1,0 +1,86 @@
+package ru.kurganec.vk.messenger.model;
+
+import android.app.Application;
+import android.content.SharedPreferences;
+import ru.kurganec.vk.messenger.model.actions.Actions;
+
+/**
+ * User: anatoly
+ * Date: 10.06.12
+ * Time: 23:03
+ * <p/>
+ * TODO ISSUES
+ * <p/>
+ * ERROR/AndroidRuntime(31915): FATAL EXCEPTION: main
+ * java.lang.IllegalArgumentException: No view found for id 0x7f090012 for fragment FriendsFragment{40769ad8 #29 id=0x7f090012}
+ * at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:864)
+ * at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1080)
+ * at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:622)
+ * at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1416)
+ * at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:420)
+ * at android.os.Handler.handleCallback(Handler.java:587)
+ * at android.os.Handler.dispatchMessage(Handler.java:92)
+ * at android.os.Looper.loop(Looper.java:130)
+ * at android.app.ActivityThread.main(ActivityThread.java:3835)
+ * at java.lang.reflect.Method.invokeNative(Native Method)
+ * at java.lang.reflect.Method.invoke(Method.java:507)
+ * at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+ * at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+ * at dalvik.system.NativeStart.main(Native Method)
+ * <p/>
+ *
+ *
+ * обновление раз в несколько минут подумать мб в Action bar захуярить ?
+ *
+  java.sql.SQLException: Operation in transaction threw non-SQL exception
+  W/System.err(15222): at com.j256.ormlite.misc.SqlExceptionUtil.create(SqlExceptionUtil.java:22)
+  W/System.err(15222): at com.j256.ormlite.misc.TransactionManager.callInTransaction(TransactionManager.java:182)
+  W/System.err(15222): at com.j256.ormlite.misc.TransactionManager.callInTransaction(TransactionManager.java:124)
+  W/System.err(15222): at com.j256.ormlite.misc.TransactionManager.callInTransaction(TransactionManager.java:112)
+  W/System.err(15222): at ru.kurganec.vk.messenger.model.VKDatabase.storeContacts(VKDatabase.java:143)
+  W/System.err(15222): at ru.kurganec.vk.messenger.model.actions.GetDialogsAction.doInBackground(GetDialogsAction.java:35)
+  W/System.err(15222): at ru.kurganec.vk.messenger.model.actions.GetDialogsAction.doInBackground(GetDialogsAction.java:18)
+  W/System.err(15222): at android.os.AsyncTask$2.call(AsyncTask.java:185)
+  W/System.err(15222): at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306)
+  W/System.err(15222): at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+  W/System.err(15222): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+  W/System.err(15222): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+  W/System.err(15222): at java.lang.Thread.run(Thread.java:1027)
+W/System.err(15222): Caused by: java.lang.NullPointerException
+W/System.err(15222): at ru.kurganec.vk.messenger.model.classes.VKProfile.getHint(VKProfile.java:92)
+W/System.err(15222): at ru.kurganec.vk.messenger.model.VKDatabase$1.call(VKDatabase.java:152)
+W/System.err(15222): at com.j256.ormlite.misc.TransactionManager.callInTransaction(TransactionManager.java:168)
+W/System.err(15222): ... 11 more
+
+
+ * иконка для очистки фильтра
+ */
+public class VK extends Application {
+    private static VK inst;
+    private Model mModel;
+    private Actions mActions;
+
+
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        inst = this;
+        mModel = new Model(this);
+        mActions = new Actions(this);
+    }
+
+
+    /**
+     * @return
+     */
+    public static Model model() {
+        return inst.mModel;
+    }
+
+    public static Actions actions() {
+        return inst.mActions;
+    }
+
+
+}

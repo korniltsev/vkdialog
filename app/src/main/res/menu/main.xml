@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_write_new_msg"
+          android:title="@string/menu_new_msg"
+          android:icon="@drawable/ic_5_content_new_email"
+          android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_preferences"
+          android:icon="@drawable/ic_2_action_settings"
+          android:title="@string/menu_pref"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_about"
+          android:icon="@drawable/ic_2_action_about"
+          android:title="@string/menu_about"
+          android:showAsAction="never"/>
+</menu>

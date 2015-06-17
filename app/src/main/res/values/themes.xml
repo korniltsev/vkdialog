@@ -1,0 +1,52 @@
+<resources>
+    <style name="VK.Theme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+
+        <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
+        <item name="android:windowBackground">@drawable/bg_window</item>
+    </style>
+
+    <style name="VK.Theme.Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+    <style name="CustomTitlePageIndicator">
+            <item name="android:background">@color/bg_pager_indicator</item>
+        <!--<item name="footerColor">#FFAA2222</item>-->
+        <item name="footerLineHeight">2dp</item>
+        <item name="footerIndicatorHeight">4dp</item>
+        <!--<item name="footerIndicatorStyle">underline</item>-->
+        <item name="android:textColor">#99FFFFFF</item>
+        <item name="selectedColor">#FFFFFF</item>
+        <item name="selectedBold">true</item>
+        <item name="topPadding">@dimen/indicator_top_padding</item>
+        <item name="clipPadding">8dp</item>
+    </style>
+
+    <style name="VK.Theme.Dark" parent="Theme.Sherlock">
+        <item name="android:actionBarStyle">@style/Widget.ActionBarDark</item>
+        <item name="actionBarStyle">@style/Widget.ActionBarDark</item>
+
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Widget.ActionBarDark" parent="android:Widget.Holo.ActionBar">
+        <item name="android:displayOptions">showHome|useLogo|showTitle</item>
+        <item name="android:background">#55000000</item>
+    </style>
+
+    <style name="Widget.ActionBarDark.S" parent="Widget.Sherlock.ActionBar">
+        <item name="displayOptions">showHome|useLogo|showTitle</item>
+        <item name="background">#55000000</item>
+    </style>
+
+    <style name="CustomTextViewStyle" >
+        <item name="android:textColor">#272c32</item>
+    </style>
+
+
+    <color name="bg_pager_indicator">#2d2d2d</color>
+</resources>

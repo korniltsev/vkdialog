@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#e2e2e2">
+            </solid>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/abs__ab_transparent_light_holo"/>
+</layer-list>

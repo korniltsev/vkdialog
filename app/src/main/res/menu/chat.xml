@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/menu_emoji"
+            android:title="@string/emoji"
+            android:icon="@drawable/emoji_smile"
+            android:showAsAction="ifRoom|withText"
+            />
+    <item
+            android:id="@+id/menu_attach"
+            android:title="@string/attach"
+            android:icon="@drawable/ic_5_content_new_attachment"
+            android:showAsAction="ifRoom|withText"
+            />
+
+
+</menu>

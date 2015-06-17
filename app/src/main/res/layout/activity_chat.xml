@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        android:background="#e2e2e2">
+
+    <LinearLayout
+            android:id="@+id/send_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:paddingLeft="5dp"
+            android:baselineAligned="false">
+
+        <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+
+                android:paddingBottom="6dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="4dp"
+                >
+
+
+            <EditText
+                    android:id="@+id/input_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_message"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+
+                    android:capitalize="sentences"
+
+                    android:background="@null"
+                    />
+        </FrameLayout>
+        <!--divider-->
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="#333f3f3f"/>-->
+        <FrameLayout
+                android:id="@+id/btn_send"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_btn_send"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+            <ImageView
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_social_send_now"
+                    android:layout_gravity="center"
+                    />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ListView
+            android:id="@android:id/list"
+            android:layout_above="@id/send_bar"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:stackFromBottom="true"
+            android:cacheColorHint="#e2e2e2"
+
+            android:fadingEdge="none"
+            android:animationCache="false"
+            />
+
+    <FrameLayout
+            android:id="@+id/wrapper_attach"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_attach_bar"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="7dp">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/list_attach"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"/>
+        </HorizontalScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

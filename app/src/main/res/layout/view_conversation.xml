@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_avatar_size"
+                android:layout_gravity="top|left">
+
+    <View
+            android:id="@+id/left_divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:layout_alignParentLeft="true"/>
+
+
+    <ImageView
+            android:id="@+id/img_avatar"
+
+            android:layout_width="@dimen/default_avatar_size"
+            android:layout_height="@dimen/default_avatar_size"
+            android:scaleType="centerCrop"
+            android:layout_toRightOf="@id/left_divider"
+
+            android:layout_marginRight="@dimen/content_padding"
+
+            />
+
+    <TextView
+            android:id="@+id/label_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="14dp"
+            android:textColor="#6f6f6f"
+            android:layout_marginRight="@dimen/content_padding"
+            android:paddingTop="3dp"
+            />
+
+
+    <!--<View-->
+            <!--android:id="@+id/ic_online_mobile"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:background="@drawable/ic_mobile_online_light_selector"-->
+            <!--android:layout_toRightOf="@id/img_avatar"-->
+            <!--android:layout_marginTop="2dp"-->
+
+            <!--/>-->
+
+    <!--<View-->
+            <!--android:id="@+id/ic_online"-->
+            <!--android:layout_width="9dp"-->
+            <!--android:layout_height="9dp"-->
+            <!--android:background="@drawable/circle_online_light_selector"-->
+            <!--android:layout_toRightOf="@id/img_avatar"-->
+            <!--android:layout_marginTop="9dp"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--/>-->
+
+    <TextView
+            android:id="@+id/label_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_avatar"
+            android:layout_toLeftOf="@id/label_time"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:drawablePadding="3dp"
+
+
+            android:paddingTop="3dp"
+            android:paddingRight="@dimen/content_padding"
+
+            />
+
+    <ImageView
+            android:id="@+id/ic_reply"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:layout_below="@id/label_name"
+            android:layout_marginTop="4dp"
+            android:layout_height="30dp" android:src="@drawable/ic_action_reply"/>
+
+    <TextView
+            android:id="@+id/label_body"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="14dp"
+            android:gravity="center_vertical"
+
+            android:layout_below="@id/label_name"
+
+            android:layout_marginRight="@dimen/content_padding"
+
+            android:layout_marginTop="-3dp"
+            />
+
+    <View
+            android:id="@+id/right_divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:layout_alignParentRight="true"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/divider"/>
+</RelativeLayout>

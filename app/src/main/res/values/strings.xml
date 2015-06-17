@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- do not localize-->
+    <string name="pref_do_notify">do_notify</string>
+    <string name="pref_ringtone">ringtone</string>
+    <string name="pref_do_sound">do_soound</string>
+    <string name="pref_do_vibrate">do_vibration</string>
+    <string name="do_resize_image_upload">do_resize_image_upload</string>
+
+    <string name="pref_small_avatars">small_avatars</string>
+    <string name="pref_invis">pref_invis</string>
+    <string name="pref_should_try_to_add_to_group">pref_should_try_to_add_to_group</string>
+
+    <string name="account_type">ru.kurganec.vk.messenger.account</string>
+    <string name="account_authority">com.android.contacts</string>
+    <string name="contact_mime_type">vnd.android.cursor.item/ru.kurganec.vk.messenger.profile</string>
+    <string name="map_key_debug">0vOAbZ8O4rDe-Y0y3wgZqyulAhcKwq4wXRICWRQ</string>
+    <string name="map_release_key">0vOAbZ8O4rDdd-7KuzfGoiRUevMMah6pnXrF_Hw</string>
+
+    <!-- localize -->
+    <string name="app_name">VKDialog</string>
+    <string name="friends">Friends</string>
+    <string name="friends_online">Online</string>
+    <string name="user_is_typing">%s is typing</string>
+    <string name="group_user_is_typing">USER_NAME is typing</string>  <!-- TODO -->
+
+
+    <string name="task_error">Ooops… Something went wrong…</string>
+    <string name="password_incorrect">Incorrect login/password</string>
+    <string name="network_error">Couldn\'t connect to vk.\nCheck your Internet connection.</string>
+
+    <string name="attach_from_geo">Attach location</string>
+    <string name="attach_from_gallery">Pick photo from gallery</string>
+    <string name="attach_from_photo">Take a picture</string>
+    <string name="send_kaptcha">Send</string>
+    <string name="uploading_pictures">Uploading pictures</string>
+    <string name="pick_user">Pick user</string>
+    <string name="pick_location">Pick location</string>
+    <string name="location">Location</string>
+
+    <string name="mount_sdcard">Insert an SD card before using camera.</string>
+    <plurals name="photos">
+        <item quantity="one">Photo</item>
+        <item quantity="other">Photos</item>
+    </plurals>
+    <plurals name="videos">
+        <item quantity="one">Video</item>
+        <item quantity="other">Videos</item>
+    </plurals>
+    <plurals name="audios">
+        <item quantity="one">Audio</item>
+        <item quantity="other">Audios</item>
+    </plurals>
+    <string name="unimplemented_attachment">Unimplemented attachment</string>
+    <string name="about"><![CDATA[<h1>Author: Korniltsev Anatoly</h1><br/>
+        <h4>Please feel free to contact me and send your feedback.</h4><br/>
+
+        <h4>mail: korniltsev.anatoly@gmail.com</h4><br/>
+        <h4>vk: http://vk.com/vkdialog</h4><br/>]]></string>
+    <string name="menu_search">Search message</string>
+    <string name="menu_new_msg">New Message</string>
+    <string name="menu_pref">Preferences</string>
+    <string name="menu_about">About</string>
+    <string name="hint_message">Message Text</string>
+    <string name="downloading_conversations">Downloading conversations</string>
+    <string name="download_more_history">Get more history</string>
+    <string name="downloading_history">Downloading history</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="sign_up">sign up</string>
+    <string name="sign_in">sign in</string>
+
+    <string name="hint_captcha">Enter captcha</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="select_notification_ringtone">Select notification ringtone</string>
+    <string name="send_picture">Send picture</string>
+    <string name="video_error">An error has occurred during video playback</string>
+    <string name="pick_video_quility">Pick video quality</string>
+    <string name="no_friends">No profiles found</string>
+    <string name="search">Search</string>
+    <string name="delete_history">Delete history?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="copy_message">Copy message?</string>
+    <string name="attach">Attach</string>
+    <string name="emoji">Emoji</string>
+    <string name="unable_to_load_picture_from_gallery">Unable to load picture from gallery. Please contact developer.</string>
+    <string name="Beta">Beta</string>
+    <string name="invisibility_mode">Invisibility mode(partial)</string>
+    <string name="may_need_time">It takes 15 minutes to become invisible. As soon as you send message you will become online. </string>
+    <string name="use_small_avatars">Use Small Avatars</string>
+    <string name="save_traffic">You may save traffic, downloading smaller profile pictures. App restart needed.</string>
+    <string name="log_out">log out</string>
+    <string name="enable_vibrations">Enable vibration</string>
+    <string name="enable_sound">Enable sound</string>
+
+    <string name="attached_photo">Attached photo</string>
+    <string name="please_rate_app">Rate VKDialog</string>
+    <string name="thank_for_response">Thank you for your rating.</string>
+    <string name="resize_pref_title">Decrease the size of sent images</string>
+    <string name="upload_image_pref_description">Can save some traffic</string>
+
+
+    <!--<string name="attached_photo">Attached Photo</string>-->
+    <!--<plurals name="attached_photo">-->
+        <!--<item quantity="one">Attached Photo</item>-->
+        <!--<item quantity="other">Attached Photos</item>-->
+    <!--</plurals>-->
+
+    <plurals name="attached_photo">
+        <item quantity="one">Вложенная фотография</item>
+        <item quantity="other">Вложенные фотографии</item>
+    </plurals>
+</resources>

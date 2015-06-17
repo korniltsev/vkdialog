@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+
+    <com.viewpagerindicator.TitlePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_pager_indicator"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
+        <EditText
+                android:id="@+id/input_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="@string/search"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:paddingRight="48dp"
+                android:paddingBottom="6dp"
+                android:textColor="#efefef"
+
+                />
+
+        <FrameLayout
+                android:id="@+id/btn_clear"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+
+
+
+
+                >
+            <!--android:background="@color/bg_pager_indicator"-->
+            <View
+                    android:layout_gravity="bottom|right"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:clickable="false"
+                    android:background="@drawable/btn_clear_input"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginRight="8dp"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/indicator"
+            />
+</RelativeLayout>

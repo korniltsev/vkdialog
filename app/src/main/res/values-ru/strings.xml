@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--do not localize-->
+
+    <string name="pref_do_notify">do_notify</string>
+    <string name="pref_ringtone">ringtone</string>
+    <string name="pref_do_sound">do_soound</string>
+    <string name="pref_do_vibrate">do_vibration</string>
+    <string name="do_resize_image_upload">do_resize_image_upload</string>
+
+
+    <string name="pref_small_avatars">small_avatars</string>
+    <string name="pref_invis">pref_invis</string>
+    <string name="pref_should_try_to_add_to_group">pref_should_try_to_add_to_group</string>
+
+    <string name="account_type">ru.kurganec.vk.messenger.account</string>
+    <string name="account_authority">com.android.contacts</string>
+    <string name="contact_mime_type">vnd.android.cursor.item/ru.kurganec.vk.messenger.profile</string>
+    <string name="map_key_debug">0vOAbZ8O4rDe-Y0y3wgZqyulAhcKwq4wXRICWRQ</string>
+    <string name="map_release_key">0vOAbZ8O4rDdd-7KuzfGoiRUevMMah6pnXrF_Hw</string>
+
+
+    <!--localize-->
+    <string name="app_name">VKDialog</string>
+    <string name="friends">Друзья</string>
+    <string name="friends_online">В сети</string>
+    <string name="user_is_typing">%s печатает</string>
+    <string name="group_user_is_typing">USER_NAME печатает</string>  <!-- TODO -->
+
+
+    <string name="task_error">Ой… Что-то пошло не так…</string>
+    <string name="password_incorrect">Неверный логин/пароль</string>
+    <string name="network_error">Не можем подключиться к vk.\nПроверьте ваше интернет соединение.</string>
+
+    <string name="attach_from_geo">Прикрепить местоположение</string>
+    <string name="attach_from_gallery">Выбрать фото из галереи</string>
+    <string name="attach_from_photo">Сделать снимок с камеры</string>
+    <string name="send_kaptcha">Отправить</string>
+    <string name="uploading_pictures">Загрузка изображений</string>
+    <string name="pick_user">Выберите пользователя</string>
+    <string name="pick_location">Выбрать</string>
+    <string name="emoji">Emoji</string>
+
+    <string name="location">Местоположение</string>
+    <string name="attached_photo">Вложенное фото</string>
+    <string name="mount_sdcard">Вставьте sd-скарту чтобы использовать камеру</string>
+    <plurals name="photos">
+        <item quantity="one">Фотография</item>
+        <item quantity="other">Фотографии</item>
+    </plurals>
+    <plurals name="videos">
+        <item quantity="one">Видеозапись</item>
+        <item quantity="other">Видеозаписи</item>
+    </plurals>
+    <plurals name="audios">
+        <item quantity="one">Аудиозапись</item>
+        <item quantity="other">Аудиозапись</item>
+    </plurals>
+    <string name="unimplemented_attachment">Не реализованное вложение. Пока.</string>
+    <string name="about"><![CDATA[<h1>Автор: Корнильцев Анатолий</h1><br/>
+        <h4>Пожалуйста свяжитесь со мной и оставьте любой отзыв об этом приложении.</h4><br/>
+
+        <h4>mail: korniltsev.anatoly@gmail.com</h4><br/>
+        <h4>vk: http://vk.com/vkdialog</h4><br/>]]></string>
+    <string name="menu_search">Искать сообщение</string>
+    <string name="menu_new_msg">Новое сообщение</string>
+    <string name="menu_pref">Настройки</string>
+    <string name="menu_about">О приложении</string>
+    <string name="hint_message">Текст сообщения</string>
+    <string name="downloading_conversations">Загрузка сообщений</string>
+    <string name="download_more_history">Загрузить историю еще</string>
+    <string name="downloading_history">Загрузка истории</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_in">Войти</string>
+    <string name="hint_captcha">Введите каптчу</string>
+    <string name="notifications">Уведомления</string>
+    <string name="enable_notifications">Включить уведомления</string>
+    <string name="Beta">Beta</string>
+
+    <string name="ringtone">Мелодия</string>
+    <string name="select_notification_ringtone">Выберите мелодию уведомления</string>
+    <string name="send_picture">Отправить изображение</string>
+    <string name="video_error">Во время произведения видео произошла ошибка</string>
+    <string name="pick_video_quility">Выберите качество видео</string>
+    <string name="no_friends">Профили не найдены</string>
+    <string name="search">Поиск</string>
+    <string name="delete_history">Удалить переписку?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="copy_message">Скопировать сообщение?</string>
+    <string name="attach">Вложить</string>
+    <string name="unable_to_load_picture_from_gallery">Невозможно вложить фотографию из галереи. Пожалуйста свяжитесь с
+        разработчиком.
+    </string>
+    <string name="invisibility_mode">Режим невидимки</string>
+    <string name="may_need_time">Режим невидимки - частичный! Чтобы стать невидимым потребудется до 15 минут. Как только вы отправите сообщение, вы станите \'online\'.</string>
+    <string name="use_small_avatars">Маленькие аватарки</string>
+    <string name="save_traffic">Вы можете сохранить свой траффик, используя маленькие аватарки. Необходим перезапуск приложения.</string>
+    <string name="log_out">Выйти</string>
+    <string name="enable_vibrations">Включить вибрацию</string>
+    <string name="enable_sound">Включить звук</string>
+    <string name="please_rate_app">Оцените VKDialog</string>
+    <string name="thank_for_response">Большое спасибо, Ваше мнение очень важно для нас.</string>
+    <string name="resize_pref_title">Уменьшать размер отправляемых картинок</string>
+    <string name="upload_image_pref_description">Позволяет уменьшить количество траффика</string>
+
+
+    <!--<string name="attached_photo">Вложенное фото</string>-->
+    <plurals name="attached_photo">
+        <item quantity="one">Вложенная фотография</item>
+        <item quantity="other">Вложенные фотографии</item>
+    </plurals>
+</resources>
