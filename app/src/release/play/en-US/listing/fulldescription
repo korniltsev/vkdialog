@@ -1,0 +1,14 @@
+Simple and lightweight messenger for popular russian soicial network vk.com
+Available photo, video and geo attachments.
+Swyping between friends/online
+Modern fly in menu
+Fixed old bugs, added new ones ;)
+Emoji (smiles)
+Attached videos plyback
+Fixed error in location attachments
+Fixed errors caused the app to crash
+Preferences localization ( ru )
+Switched to dark ActionBar
+Added captcha support(auth)
+The app is renamed: Chat vk -> VKDialog
+Added sharing pictures from gallery
