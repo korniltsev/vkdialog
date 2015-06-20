@@ -43,8 +43,8 @@ android {
         minSdkVersion 8
         targetSdkVersion 18
         compileSdkVersion "Google Inc.:Google APIs:18"
-        versionName "0.0.23b"
-        versionCode 23
+        versionName "0.0.24b"
+        versionCode 24
     }
 
 
