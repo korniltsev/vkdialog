@@ -64,8 +64,8 @@ public class RatingDialog extends DialogFragment implements RatingBar.OnRatingBa
     }
 
     private void goToMarket() {
+        final String appPackageName = getActivity().getPackageName(); // getPackageName() from Context or Activity object
         try {
-            final String appPackageName = getActivity().getPackageName(); // getPackageName() from Context or Activity object
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
             } catch (android.content.ActivityNotFoundException anfe) {

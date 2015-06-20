@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
@@ -42,6 +43,7 @@ public class MainActivity extends VKActivity {
             finish();
             return;
         }
+        showTelegramPromo(this, savedInstanceState);
 
         setContentView(R.layout.activity_main);
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
@@ -78,6 +80,16 @@ public class MainActivity extends VKActivity {
         }
     }
 
+    public static void showTelegramPromo(FragmentActivity a, Bundle savedInstanceState) {
+        if (savedInstanceState == null) {
+            boolean clicked = a.getSharedPreferences(TelegramPromoDialog.PREF_NAME, MODE_PRIVATE)
+                    .getBoolean(TelegramPromoDialog.PREF_CLICKED, false);
+            if (!clicked){
+                new TelegramPromoDialog()
+                        .show(a.getSupportFragmentManager(), "promo");
+            }
+        }
+    }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {

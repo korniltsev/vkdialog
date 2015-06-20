@@ -3,7 +3,6 @@ package ru.kurganec.vk.messenger.newui;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +16,6 @@ import com.squareup.picasso.Picasso;
 import ru.kurganec.vk.messenger.R;
 import ru.kurganec.vk.messenger.model.VK;
 import ru.kurganec.vk.messenger.model.actions.events.AuthEvent;
-import ru.kurganec.vk.messenger.model.db.Profile;
 import ru.kurganec.vk.messenger.utils.BaseActionsObserver;
 
 // import com.flurry.android.FlurryAgent;
@@ -43,6 +41,8 @@ public class SignInActivity extends SherlockFragmentActivity implements View.OnC
 
         Button btn = (Button) findViewById(R.id.btn_sign_in);
         btn.setOnClickListener(this);
+
+        MainActivity.showTelegramPromo(this, savedInstanceState);
     }
 
     @Override
